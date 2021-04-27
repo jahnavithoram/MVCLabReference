@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewData["Title"] = "Stat";
+}
+<h1>Stats of the Marks:</h1>
+<table>
+    <tr>
+        <th>
+            Max marks in English
+        </th>
+        <td>
+            @foreach (var student in ViewBag.MaxEng)
+                @student
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Max marks in Maths
+        </th>
+        <td>
+            @foreach (var student in ViewBag.MaxMath)
+                @student
+
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Max marks in Science
+        </th>
+        <td>
+            @foreach (var student in ViewBag.MaxSci)
+                @student
+
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Min marks in English
+        </th>
+        <td>
+            @foreach (var student in ViewBag.MinEng)
+                @student
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Min marks in Maths
+        </th>
+        <td>
+            @foreach (var student in ViewBag.MinMath)
+                @student
+
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Minmarks in Science
+        </th>
+        <td>
+            @foreach (var student in ViewBag.MinSci)
+                @student
+
+        </td>
+    </tr>
+
+</table>
+<table>
+    <tr>
+        <th>
+            Avg in English
+        </th>
+        <td>
+            @ViewBag.avgEng
+        </td>
+    </tr>
+    <tr>
+    <tr>
+        <th>
+            Avg in Math
+        </th>
+        <td>
+            @ViewBag.avgMath
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Avg in Science
+        </th>
+        <td>
+            @ViewBag.avgSci
+        </td>
+    </tr>
+    
+    <tr>
+        <th>
+            Total No.of Students
+        </th>
+        <td>
+            @ViewBag.stucount
+        </td>
+    </tr>
+</table>

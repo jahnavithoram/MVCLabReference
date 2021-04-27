@@ -1,0 +1,61 @@
+﻿@model MVCBasics.Models.LqStudentModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>LqStudentModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RollNo" class="control-label"></label>
+                <input asp-for="RollNo" class="form-control" />
+                <span asp-validation-for="RollNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Class" class="control-label"></label>
+                <input asp-for="Class" class="form-control" />
+                <span asp-validation-for="Class" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sec" class="control-label"></label>
+                <input asp-for="Sec" class="form-control" />
+                <span asp-validation-for="Sec" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnglishM" class="control-label"></label>
+                <input asp-for="EnglishM" class="form-control" />
+                <span asp-validation-for="EnglishM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MathsM" class="control-label"></label>
+                <input asp-for="MathsM" class="form-control" />
+                <span asp-validation-for="MathsM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScienceM" class="control-label"></label>
+                <input asp-for="ScienceM" class="form-control" />
+                <span asp-validation-for="ScienceM" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

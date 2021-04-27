@@ -16,5 +16,6 @@ namespace DataLayer
         public DbSet<EmployeeModel> EmployeeModel { get; set; }
         public DbSet<StudentModel> StudentModel { get; set; }
         public DbSet<SubjectModel> SubjectModel { get; set; }
+        public DbSet<LqStudentModel> LqStudentModel { get; set; }
     }
 }

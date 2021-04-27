@@ -1,0 +1,63 @@
+﻿@model MVCBasics.Models.LqStudentModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>LqStudentModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RollNo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RollNo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Class)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Class)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sec)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sec)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EnglishM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EnglishM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MathsM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MathsM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ScienceM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ScienceM)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

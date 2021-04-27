@@ -14,5 +14,7 @@ namespace DataLayer
         Task Update(T entity);
         Task Delete(string id);
        
+
+
     }
 }

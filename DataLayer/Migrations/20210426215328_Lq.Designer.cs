@@ -3,14 +3,16 @@ using DataLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MVCBasics.Migrations
 {
     [DbContext(typeof(AppContext))]
-    partial class AppContextModelSnapshot : ModelSnapshot
+    [Migration("20210426215328_Lq")]
+    partial class Lq
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -56,27 +58,6 @@ namespace MVCBasics.Migrations
                     b.Property<string>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Class")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("EnglishM")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MathsM")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("RollNo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ScienceM")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Sec")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 
